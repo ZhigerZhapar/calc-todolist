@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css"/>
+    <title>calculator</title>
+  </head>
+  <body>
+    <div class="wrapper">
+    <div class="calculator container">
+      <input id="calculator__input" readonly/>
+      <div id="buttons">
+        <button  onclick="add('7')">7</button>
+        <button  onclick="add('8')">8</button>
+        <button  onclick="add('9')">9</button>
+        <button  id="operation" onclick="add('+')">+</button>
+        <button  onclick="add('4')">4</button>
+        <button  onclick="add('5')">5</button>
+        <button  onclick="add('6')">6</button>
+        <button  id="operation" onclick="add('-')">-</button>
+        <button  onclick="add('1')">1</button>
+        <button  onclick="add('2')">2</button>
+        <button  onclick="add('3')">3</button>
+        <button  id="operation"   onclick="add('*')">*</button>
+        <button  onclick="add('0')">0</button>
+        <button  onclick="add('.')">.</button>
+        <button  class="result">=</button>
+        <button  id="operation" onclick="add('/')">/</button>
+        <button  class="operation op1" onclick="clear()">C</button>
+      </div>
+    </div>
+    <div class="todolist">
+    <div class="todolist__container container">
+        <div class="todolist__body">
+        <h2 class="todolist__title">My ToDo List</h2>
+        <div class="todolist__appendtask">
+            <input class="todoinput" placeholder="Add a new task" type="text">
+            <br>
+            <button class="todobutton">ADD TASK</button>
+            <button class="todobutton2">FINISH</button>
+            <ul class="todolistD"></ul>
+        </div>
+    </div>
+    </div>
+</div>
+</div>
+  </body>
+  <script src="app.js"></script>
+</html>
